@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/dj5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #DC143C;
+    font-style: MV Boli;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #DC143C;
+    transition: 0.3s;
+}
+
+.btn {
+    color: white;
+    background-color: #DC143C;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 8px 20px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2)
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%)
+}
+
+h1 {
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 70px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+h4 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.newsettler form {
+    width: 350px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsettler form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #DC143C;
+    outline: none;
+    border-radius: 30px;
+}
+
+.newsettler form input:last-child {
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #DC143C;
+    color: white;
+    box-shadow: 0px 0px 5px, #000, 0px 0px;
+    top: 6px;
+    right: 6px;
+}
+
+.conatiner2 {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "g1 g1" "a1 a1" "a1 a1";
+}
+
+.gallery {
+    grid-area: g1;
+    display: flex;
+    background-color: rgb(162, 92, 219);
+    height: 300px;
+}
+
+.about {
+    grid-area: a1;
+    color: white;
+    height: 600px;
+    background-color: rgb(45, 36, 36);
+}
+
+.Aboutme {
+    margin: 30px;
+    padding: 10px;
+}
+
+.para {
+    margin: 30px;
+    padding: 20px;
+    height: 300px;
+}
